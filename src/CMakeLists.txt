@@ -17,7 +17,7 @@ set(CMAKE_OUTPUT_DIR "out")
 
 set(CMAKE_CXX_FLAGS_RELEASE "-fPIC -O2 -Wall")
 
-execute_process(COMMAND bash ../../../src/prepare_graph.sh RESULT_VARIABLE ret)
+execute_process(COMMAND bash ../../../script/deploy.sh RESULT_VARIABLE ret)
 IF(${ret})
    message(FATAL_ERROR "some error occured!")
 ENDIF(${ret})
@@ -32,7 +32,6 @@ $ENV{DDK_PATH}/include/third_party/cereal/include
 $ENV{DDK_PATH}/include/libc_sec/include
 
 $ENV{HOME}/ascend_ddk/include
-$ENV{DDK_PATH}/include/third_party/opencv/include
 
 common camera_datasets face_detection_inference face_detection_post_process
 )

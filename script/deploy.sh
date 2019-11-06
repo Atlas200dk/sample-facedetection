@@ -1,10 +1,8 @@
 #!/bin/bash
-script_path="$( cd "$(dirname "$0")" ; pwd -P )"
-app_path="${script_path}"
-
+script_path="$( cd "$(dirname $BASH_SOURCE)" ; pwd -P)"
+app_path="${script_path}/../src"
 
 . ${script_path}/func_util.sh
-
 
 check_param_configure()
 {
@@ -19,7 +17,7 @@ check_param_configure()
     #get and check format of remost_host ip
     check_remote_host
     if [ $? -ne 0 ];then
-	return 1
+		return 1
     fi 
 
     #check format of data_source
@@ -37,6 +35,25 @@ check_param_configure()
     fi
 }
 
+
+function build_commen()
+{
+	echo "build commen lib..."
+    bash ${script_path}/build_ezdvpp.sh ${remote_host}
+    if [ $? -ne 0 ];then
+        echo "ERROR: Failed to deploy ezdvpp"
+        return 1
+    fi
+
+    bash ${script_path}/build_presenteragent.sh ${remote_host}
+    if [ $? -ne 0 ];then
+        echo "ERROR: Failed to deploy presenteragent"
+        return 1
+    fi
+    return 0
+}
+
+
 function main()
 {
     echo "Modify param information in graph.config..."
@@ -45,15 +62,45 @@ function main()
         return 1
     fi
 
+    if tmp=`wc -l ${script_path}/Tag 2>/dev/null`;then
+        line=`echo $tmp | awk -F' ' '{print $1}'`
+        if [[ $line -ne 1 ]];then
+            rm -rf ${script_path}/Tag
+            build_commen
+            if [ $? -ne 0 ];then
+                echo "ERROR: Failed to deploy commen lib"
+                return 1
+            else
+                echo "success" > ${script_path}/Tag
+            fi
+        else
+            [[ "success" = `cat ${script_path}/Tag | grep "^success$"` ]] || build_commen
+            if [ $? -ne 0 ];then
+                echo "ERROR: Failed to deploy commen lib"
+                return 1
+            else
+                echo "success" > ${script_path}/Tag
+            fi
+        fi
+    else
+        build_commen
+        if [ $? -ne 0 ];then
+            echo "ERROR: Failed to deploy commen lib"
+            return 1
+        else
+            echo "success" > ${script_path}/Tag
+        fi
+    fi
+
     echo "echo Prepare app configuration..."
     parse_presenter_altasdk_ip ${remote_host}
-    presenter_port=`grep presenter_server_port ${app_path}/../presenterserver/face_detection/config/config.conf | awk -F '=' '{print $2}' | sed 's/[^0-9]//g'`
+    presenter_port=`grep presenter_server_port ${script_path}/../presenterserver/face_detection/config/config.conf | awk -F '=' '{print $2}' | sed 's/[^0-9]//g'`
     if [ $? -ne 0 ];then
-        echo "ERROR: get presenter server port failed, please check ${app_path}/../presenterserver/face_detection/config/config.conf."
+        echo "ERROR: get presenter server port failed, please check ${script_path}/../presenterserver/face_detection/config/config.conf."
         return 1
     fi
 
-    cp -r ${app_path}/graph_template.config ${app_path}/graph.config 
+    cp -r ${script_path}/graph_template.config ${app_path}/graph.config
     sed -i "s/\${template_data_source}/${data_source}/g" ${app_path}/graph.config
     sed -i "s/\${template_app_name}/${presenter_view_app_name}/g" ${app_path}/graph.config
     sed -i "s/\${template_presenter_ip}/${presenter_atlasdk_ip}/g" ${app_path}/graph.config
