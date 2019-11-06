@@ -105,6 +105,8 @@ function main()
     sed -i "s/\${template_app_name}/${presenter_view_app_name}/g" ${app_path}/graph.config
     sed -i "s/\${template_presenter_ip}/${presenter_atlasdk_ip}/g" ${app_path}/graph.config
     sed -i "s/\${template_presenter_port}/${presenter_port}/g" ${app_path}/graph.config
+
+
     return 0
 }
 main
