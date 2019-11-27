@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9de38cf-27ce-4ea0-bd77-73b93890e53f" name="Default Changelist" comment="" />
+    <list default="true" id="2a2b7bc2-4625-48df-830b-d7e370ad946f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/../out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,205 +9,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="hideWarnings" value="true" />
-    <option name="HIDE_WARNINGS" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/build_ezdvpp.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="11" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/build_presenteragent.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graph.config">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="126" selection-start-line="126" selection-end-line="126" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/run_present_server.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/deploy.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="83" column="10" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/face_detection.om">
-          <provider selected="true" editor-type-id="om_editor_type_id" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="75" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/param_configure.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/func_util.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4800">
-              <caret line="320" column="10" selection-start-line="320" selection-start-column="10" selection-end-line="320" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/graph_template.config">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>check_ip_addr</find>
-      <find>ERROR: invalid camera channel name, please input Channel-1 or Channel-2.</find>
-      <find>parse_presenter_altasdk_ip</find>
-      <find>check_ips_in_same_segment</find>
-      <find>cidr2mask</find>
-      <find>Channel-1</find>
-      <find>check_remote_host</find>
-      <find>remote_host</find>
-      <find>project</find>
-      <find>cv</find>
-      <find>script_path</find>
-      <find>app_name</find>
-      <find>FATAL_ERROR</find>
-      <find>DEVICE_LIB_PATH</find>
-      <find>app_path</find>
-      <find>tools_path</find>
-      <find>camera_dataset</find>
-      <find>camera_datasets</find>
-      <find>DDK_BIN</find>
-      <find>check_</find>
-      <find>check_param_configure</find>
-    </findStrings>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/Main.cpp" />
-        <option value="$PROJECT_DIR$/src/graph.config" />
-        <option value="$PROJECT_DIR$/presenterserver/face_detection/config/config.conf" />
-        <option value="$PROJECT_DIR$/src/tools/param_configure.conf" />
-        <option value="$PROJECT_DIR$/script/prepare_present_server.sh" />
-        <option value="$PROJECT_DIR$/tools/script/func_deploy.sh" />
-        <option value="$PROJECT_DIR$/tools/script/func_util.sh" />
-        <option value="$PROJECT_DIR$/tools/script/prepare_graph.sh" />
-        <option value="$PROJECT_DIR$/tools/script/prepare_present_server.sh" />
-        <option value="$PROJECT_DIR$/src/func_util.sh" />
-        <option value="$PROJECT_DIR$/src/prepare_graph.sh" />
-        <option value="$PROJECT_DIR$/src/prepare_present_server.sh" />
-        <option value="$PROJECT_DIR$/src/graph_template.config" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/script/prepare_graph.sh" />
-        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/script/graph_template.config" />
-        <option value="$PROJECT_DIR$/run_present_server.sh" />
-        <option value="$PROJECT_DIR$/script/INFO.txt" />
-        <option value="$PROJECT_DIR$/script/func_util.sh" />
-        <option value="$PROJECT_DIR$/script/build_ezdvpp.sh" />
-        <option value="$PROJECT_DIR$/script/build_presenteragent.sh" />
-        <option value="$PROJECT_DIR$/src/param_configure.conf" />
-        <option value="$PROJECT_DIR$/script/deploy.sh" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="707" />
-    <option name="y" value="-4" />
-    <option name="width" value="924" />
-    <option name="height" value="1068" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="547" />
+    <option name="y" value="216" />
+    <option name="width" value="928" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="sample_facedetection" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="sample_facedetection" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="sample_facedetection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sample_facedetection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sample_facedetection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sample_facedetection" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sample_facedetection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sample_facedetection" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="deletionFromPopupRequiresConfirmation" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -221,248 +37,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="AscendAppConfigurationType" factoryName="Ascend App" hostip="">
-      <method v="2">
-        <option name="ToolBeforeAscendAppRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration name="sample_facedetection" type="AscendAppConfigurationType" factoryName="Ascend App" hostip="192.168.1.2" ProfilingParams="{&quot;--ctrl_cpu_profiling&quot;:&quot;on&quot;,&quot;--llc_capacity&quot;:&quot;on&quot;,&quot;--RTS_Profiling&quot;:&quot;on&quot;,&quot;ProfilingStatus&quot;:&quot;off&quot;,&quot;peripheral_dvpp&quot;:&quot;on&quot;,&quot;--ai_core_profiling&quot;:&quot;on&quot;,&quot;--ddr_interval&quot;:&quot;100&quot;,&quot;--ai_core_profiling_interval&quot;:&quot;10&quot;,&quot;--HIAI_Engine_Profiling&quot;:&quot;on&quot;,&quot;--cpu_profiling_interval&quot;:&quot;20&quot;,&quot;--ai_core_profiling_mode&quot;:&quot;task-based&quot;,&quot;--ddr_profiling&quot;:&quot;on&quot;,&quot;peripheral_nic&quot;:&quot;on&quot;,&quot;--ai_cpu_profiling&quot;:&quot;on&quot;,&quot;--llc_bandwidth&quot;:&quot;off&quot;,&quot;--OME_Profiling&quot;:&quot;on&quot;,&quot;--peripheral_profiling&quot;:&quot;nic,dvpp&quot;,&quot;--ddr_master_id&quot;:&quot;0&quot;,&quot;--ts_cpu_profiling&quot;:&quot;on&quot;,&quot;--peripheral_profiling_interval&quot;:&quot;10&quot;,&quot;--llc_interval&quot;:&quot;100&quot;}">
-      <method v="2">
-        <option name="ToolBeforeAscendAppRunTask" enabled="false" />
-      </method>
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a9de38cf-27ce-4ea0-bd77-73b93890e53f" name="Default Changelist" comment="" />
-      <created>1571039348182</created>
+      <changelist id="2a2b7bc2-4625-48df-830b-d7e370ad946f" name="Default Changelist" comment="" />
+      <created>1574837888425</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571039348182</updated>
+      <updated>1574837888425</updated>
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="547" y="216" width="928" height="1056" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19661388" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.50553095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Log" />
+      <window_info anchor="bottom" id="Output" visible="true" weight="0.3312369" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3299389" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49917987" weight="0.37881875" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-      <window_info anchor="bottom" id="Log" order="7" weight="0.32790223" />
-      <window_info anchor="bottom" id="Output" order="8" weight="0.19653767" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49918076" weight="0.23217922" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008192" side_tool="true" weight="0.3849287" />
-      <window_info anchor="bottom" id="Build" order="12" sideWeight="0.49918076" weight="0.37270877" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/script/face_detection.log" />
-    <entry file="file://$PROJECT_DIR$/build/cmake/CMakeLists.txt" />
-    <entry file="file://$PROJECT_DIR$/src/face_detection_inference/face_detection_inference.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presenterserver/face_detection/config/config.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tools/param_configure.conf" />
-    <entry file="file://$PROJECT_DIR$/script/prepare_present_server.sh" />
-    <entry file="file://$PROJECT_DIR$/tools/script/build_ffmpeg.sh" />
-    <entry file="file://$PROJECT_DIR$/tools/script/build_ezdvpp.sh" />
-    <entry file="file://$PROJECT_DIR$/tools/script/build_presenteragent.sh" />
-    <entry file="file://$PROJECT_DIR$/tools/script/prepare_graph.sh" />
-    <entry file="file://$PROJECT_DIR$/tools/script/prepare_present_server.sh" />
-    <entry file="file://$PROJECT_DIR$/src/Main.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/script/func_util.sh" />
-    <entry file="file://$PROJECT_DIR$/tools/script/func_deploy.sh" />
-    <entry file="file://$PROJECT_DIR$/tools/param_configure.conf" />
-    <entry file="file://$PROJECT_DIR$/src/func_util.sh" />
-    <entry file="file://$PROJECT_DIR$/new_sample_facedetection.iml" />
-    <entry file="file://$PROJECT_DIR$/run/out/graph.config" />
-    <entry file="file://$PROJECT_DIR$/src/prepare_present_server.sh" />
-    <entry file="file://$PROJECT_DIR$/src/face_detection_post_process/face_detection_post_process.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/face_detection_inference/face_detection_inference.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="146" column="35" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="35" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camera_datasets/Mind_camera_datasets.cpp" />
-    <entry file="file://$PROJECT_DIR$/sample_facedetection.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graph_template.config" />
-    <entry file="file://$PROJECT_DIR$/src/prepare_graph.sh" />
-    <entry file="file://$PROJECT_DIR$/.build_project">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/param_configure.conf" />
-    <entry file="file://$PROJECT_DIR$/script/prepare_graph.sh" />
-    <entry file="file://$PROJECT_DIR$/script/func_deploy.sh" />
-    <entry file="file://$PROJECT_DIR$/script/ezdvpp/Makefile" />
-    <entry file="file://$PROJECT_DIR$/script/INFO.txt" />
-    <entry file="file://$PROJECT_DIR$/script/build_ezdvpp.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="75" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/func_util.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4800">
-          <caret line="320" column="10" selection-start-line="320" selection-start-column="10" selection-end-line="320" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/graph_template.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/param_configure.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/deploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="10" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/face_detection.om">
-      <provider selected="true" editor-type-id="om_editor_type_id" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/build_presenteragent.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run/out/graph.config.host">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graph.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_present_server.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
