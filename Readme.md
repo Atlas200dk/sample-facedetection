@@ -77,13 +77,13 @@
 
         执行如下命令在最后一行添加DDK\_HOME及LD\_LIBRARY\_PATH的环境变量。
 
-        **export tools\_version = _1.31.X.X_**
+        **export tools\_version=_1.31.X.X_**
 
-        **export DDK\_HOME = $HOME/.mindstudio/huawei/ddk/$tools\_version/ddk**
+        **export DDK\_HOME=$HOME/.mindstudio/huawei/ddk/\$tools\_version/ddk**
 
-        **export NPU\_DEVICE\_LIB = $DDK\_HOME/../RC/host-aarch64\_Ubuntu16.04.3/lib**
+        **export NPU\_DEVICE\_LIB=$DDK\_HOME/../RC/host-aarch64\_Ubuntu16.04.3/lib**
 
-        **export LD\_LIBRARY\_PATH = $DDK\_HOME/lib/x86\_64-linux-gcc5.4**
+        **export LD\_LIBRARY\_PATH=$DDK\_HOME/lib/x86\_64-linux-gcc5.4**
 
         >![](public_sys-resources/icon-note.gif) **说明：**   
         >-   **_1.31.X.X_**是[1](#zh-cn_topic_0203223294_li61417158198)中查询到的DDK版本号，需要根据查询结果对应填写，如**1.31.T15.B150**  
