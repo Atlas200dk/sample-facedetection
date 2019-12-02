@@ -21,7 +21,7 @@
 
 2.  <a name="zh-cn_topic_0203223294_li1365682471610"></a>获取此应用中所需要的原始网络模型。
 
-    参考[表1](#zh-cn_topic_0203223294_table144841813177)获取此应用中所用到的原始网络模型及其对应的权重文件，并将其存放到Mind Studio所在Ubuntu服务器的任意目录，这两个文件必须存放到同一个目录下。例如_$HOME/models/facedetection_。
+    参考[表1](#zh-cn_topic_0203223294_table144841813177)获取此应用中所用到的原始网络模型及其对应的权重文件，并将其存放到Mind Studio所在Ubuntu服务器的任意目录，这两个文件必须存放到同一个目录下。例如：_$HOME/models/facedetection_。
 
     **表 1**  Face Detection中使用模型
 
