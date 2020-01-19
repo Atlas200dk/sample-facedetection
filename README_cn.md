@@ -17,11 +17,11 @@
 
 1.  <a name="zh-cn_topic_0182554577_li953280133816"></a>获取源码包。
 
-    将[https://gitee.com/Atlas200DK/sample-facedetection](https://gitee.com/Atlas200DK/sample-facedetection)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：_/home/ascend/sample-facedetection_。
+    将[https://gitee.com/Atlas200DK/sample-facedetection](https://gitee.com/Atlas200DK/sample-facedetection)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：$HOME/sample-facedetection。
 
 2.  <a name="zh-cn_topic_0182554577_li1365682471610"></a>获取此应用中所需要的原始网络模型。
 
-    参考[表1](#zh-cn_topic_0182554577_table144841813177)获取此应用中所用到的原始网络模型及其对应的权重文件，并将其存放到Mind Studio所在Ubuntu服务器的任意目录，例如$HOME/ascend/models/facedetection。
+    参考[表1](#zh-cn_topic_0182554577_table144841813177)获取此应用中所用到的原始网络模型及其对应的权重文件，并将其存放到Mind Studio所在Ubuntu服务器的任意目录，例如：$HOME/ascend/models/facedetection。
 
     **表 1**  Face Detection中使用模型
 
@@ -81,12 +81,11 @@
 
     执行如下命令在最后一行添加DDK\_HOME及LD\_LIBRARY\_PATH的环境变量。
 
-    **export DDK\_HOME=/home/XXX/tools/che/ddk/ddk**
+    **export DDK\_HOME=$HOME/tools/che/ddk/ddk**
 
     **export LD\_LIBRARY\_PATH=$DDK\_HOME/uihost/lib**
 
-    >![](doc/source/img/icon-note.gif) **说明：**   
-    >-   XXX为Mind Studio安装用户，/home/XXX/tools为DDK默认安装路径。  
+    >![](doc/source/img/icon-note.gif) **说明：**    
     >-   如果此环境变量已经添加，则此步骤可跳过。  
 
     输入:wq!保存退出。
@@ -98,7 +97,7 @@
 
 ## 部署<a name="zh-cn_topic_0182554577_section7994174585917"></a>
 
-1.  以Mind Studio安装用户进入facedetectionapp应用代码所在根目录，如/home/ascend/sample-facedetection。
+1.  以Mind Studio安装用户进入facedetectionapp应用代码所在根目录，如：$HOME/sample-facedetection。
 2.  <a name="zh-cn_topic_0182554577_li9634105881418"></a>执行部署脚本，进行工程环境准备，包括ascenddk公共库的编译与部署、Presenter Server服务器的配置等操作，其中Presenter Server用于接收Application发送过来的数据并通过浏览器进行结果展示。
 
     **bash deploy.sh** _host\_ip_ _model\_mode_
@@ -186,7 +185,7 @@
 
     Face Detection应用执行后会处于持续运行状态，若要停止Face Detection应用程序，可执行如下操作。
 
-    以Mind Studio安装用户在_** /home/ascend/sample-facedetection**_  目录下执行如下命令：
+    以Mind Studio安装用户在$HOME/sample-facedetection目录下执行如下命令：
 
     **bash stop\_facedetectionapp.sh** _host\_ip_
 
