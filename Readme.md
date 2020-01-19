@@ -17,11 +17,11 @@
 
 1.  <a name="zh-cn_topic_0203223294_li953280133816"></a>获取源码包。
 
-    将[https://gitee.com/Atlas200DK/sample-facedetection/tree/1.3x.0.0/](https://gitee.com/Atlas200DK/sample-facedetection/tree/1.3x.0.0/)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：_$HOME/AscendProjects/sample-facedetection_。
+    将[https://gitee.com/Atlas200DK/sample-facedetection/tree/1.3x.0.0/](https://gitee.com/Atlas200DK/sample-facedetection/tree/1.3x.0.0/)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：$HOME/AscendProjects/sample-facedetection。
 
 2.  <a name="zh-cn_topic_0203223294_li1365682471610"></a>获取此应用中所需要的原始网络模型。
 
-    参考[表1](#zh-cn_topic_0203223294_table144841813177)获取此应用中所用到的原始网络模型及其对应的权重文件，并将其存放到Mind Studio所在Ubuntu服务器的任意目录，这两个文件必须存放到同一个目录下。例如：_$HOME/models/facedetection_。
+    参考[表1](#zh-cn_topic_0203223294_table144841813177)获取此应用中所用到的原始网络模型及其对应的权重文件，并将其存放到Mind Studio所在Ubuntu服务器的任意目录，这两个文件必须存放到同一个目录下。例如：$HOME/models/facedetection。
 
     **表 1**  Face Detection中使用模型
 
@@ -79,7 +79,7 @@
 
         **export tools\_version=_1.31.X.X_**
 
-        **export DDK\_HOME=$HOME/.mindstudio/huawei/ddk/_1.31.X.X_/ddk**
+        **export DDK\_HOME=$HOME/.mindstudio/huawei/ddk/$tools\_version/ddk**
 
         **export NPU\_DEVICE\_LIB=$DDK\_HOME/../RC/host-aarch64\_Ubuntu16.04.3/lib**
 
@@ -89,7 +89,7 @@
         >-   **_1.31.X.X_**是[1](#zh-cn_topic_0203223294_li61417158198)中查询到的DDK版本号，需要根据查询结果对应填写，如**1.31.T15.B150**  
         >-   如果此环境变量已经添加，则此步骤可跳过。  
 
-        输入**:wq!**保存退出。
+        输入:wq!保存退出。
 
         执行如下命令使环境变量生效。
 
@@ -135,7 +135,7 @@
 
             此时在**DetectionOutput**层的**Suggestion**中选择**SSDDetectionOutput**，并点击**Retry**。
 
-            模型转换成功后，后缀为.om的离线模型存放地址为_$HOME/modelzoo/face\_detection/device_。
+            模型转换成功后，后缀为.om的离线模型存放地址为：$HOME/modelzoo/face\_detection/device。
 
             >![](public_sys-resources/icon-note.gif) **说明：**   
             >Mindstudio模型转换中每一步的具体意义和参数说明可以参考[https://ascend.huawei.com/doc/mindstudio/2.1.0\(beta\)/zh/zh-cn\_topic\_0188462651.html](https://ascend.huawei.com/doc/mindstudio/2.1.0(beta)/zh/zh-cn_topic_0188462651.html)  
@@ -163,7 +163,7 @@
 
 1.  打开对应的工程。
 
-    以Mind Studio安装用户在命令行中进入安装包解压后的“MindStudio-ubuntu/bin”目录，如$HOME/MindStudio-ubuntu/bin。执行如下命令启动Mind Studio。
+    以Mind Studio安装用户在命令行中进入安装包解压后的“MindStudio-ubuntu/bin”目录，如：$HOME/MindStudio-ubuntu/bin。执行如下命令启动Mind Studio。
 
     **./MindStudio.sh**
 
