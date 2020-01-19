@@ -17,7 +17,7 @@ Before running the application, obtain the source code package and configure the
 
 1.  <a name="en-us_topic_0182554577_li953280133816"></a>Obtain the source code package.
 
-    Download all the code in the sample-facedetection repository at  [https://gitee.com/Atlas200DK/sample-facedetection](https://gitee.com/Atlas200DK/sample-facedetection)  to any directory on Ubuntu Server where  Mind Studio  is located as the  Mind Studio  installation user, for example,  _/home/ascend/sample-facedetection/_.
+    Download all the code in the sample-facedetection repository at  [https://gitee.com/Atlas200DK/sample-facedetection](https://gitee.com/Atlas200DK/sample-facedetection)  to any directory on Ubuntu Server where  Mind Studio  is located as the  Mind Studio  installation user, for example,  $HOME/sample-facedetection/.
 
 2.  <a name="en-us_topic_0182554577_li1365682471610"></a>Obtain the source network model required by the application.
 
@@ -80,12 +80,11 @@ Before running the application, obtain the source code package and configure the
 
     Run the following commands to add the environment variables  **DDK\_HOME**  and  **LD\_LIBRARY\_PATH**  to the last line:
 
-    **export DDK\_HOME=/home/XXX/tools/che/ddk/ddk**
+    **export DDK\_HOME=$HOME/tools/che/ddk/ddk**
 
     **export LD\_LIBRARY\_PATH=$DDK\_HOME/uihost/lib**
 
-    >![](doc/source/img/icon-note.gif) **NOTE:**   
-    >-   **XXX**  indicates the  Mind Studio  installation user, and  **/home/XXX/tools**  indicates the default installation path of the DDK.  
+    >![](doc/source/img/icon-note.gif) **NOTE:**    
     >-   If the environment variables have been added, skip this step.  
 
     Enter  **:wq!**  to save and exit.
@@ -97,7 +96,7 @@ Before running the application, obtain the source code package and configure the
 
 ## Deployment<a name="en-us_topic_0182554577_section7994174585917"></a>
 
-1.  Access the root directory where the face detection application code is located as the  Mind Studio  installation user, for example,  _**/home/ascend/sample-facedetection**_.
+1.  Access the root directory where the face detection application code is located as the  Mind Studio  installation user, for example,  **$HOME/sample-facedetection**.
 2.  Run the deployment script to prepare the project environment, including compiling and deploying the ascenddk public library and configuring Presenter Server. The Presenter Server is used to receive the data sent by the application and display the result through the browser.
 
     **bash deploy.sh** _host\_ip_ _model\_mode_
@@ -185,7 +184,7 @@ Before running the application, obtain the source code package and configure the
 
     The face detection application is running continually after being executed. To stop it, perform the following operation:
 
-    Run the following command in the  _**/home/ascend/sample-facedetection**_  directory as the  Mind Studio  installation user:
+    Run the following command in the **$HOME/sample-facedetection** directory as the  Mind Studio  installation user:
 
     **bash stop\_facedetectionapp.sh** _host\_ip_
 
