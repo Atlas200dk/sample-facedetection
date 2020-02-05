@@ -153,7 +153,7 @@
             ```
 
             >![](public_sys-resources/icon-note.gif) **说明：**   
-            >-   input\_shape、insert\_op\_conf、op\_name\_map所需要的文件都在源码所在路径下的“sample-facedetection/script”目录下，请根据您实际的源码所在路径配置这些文件路径。  
+            >-   input\_shape、insert\_op\_conf、op\_name\_map所需要的文件都在源码所在路径下的“sample-facedetection/MyModel”目录下，请根据您实际的源码所在路径配置这些文件路径。  
             >-   每个参数的具体意义可以在以下文档中了解[https://ascend.huawei.com/doc/Atlas200DK/1.3.0.0/zh/zh-cn\_topic\_0165968579.html](https://ascend.huawei.com/doc/Atlas200DK/1.3.0.0/zh/zh-cn_topic_0165968579.html)。  
 
 
