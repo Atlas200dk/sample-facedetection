@@ -149,7 +149,7 @@
         2.  使用omg工具执行以下命令进行模型转换。
 
             ```
-            ${DDK_HOME}/uihost/bin/omg --output="./face_detection" --model="./face_detection.prototxt" --framework=0 --ddk_version=${tools_version} --weight="./face_detection.caffemodel" --input_shape=`head -1 $HOME/AscendProjects/sample-facedetection/script/shape_face_detection` --insert_op_conf=$HOME/AscendProjects/sample-facedetection/script/aipp_face_detection.cfg --op_name_map=$HOME/AscendProjects/sample-facedetection/script/reassign_operators
+            ${DDK_HOME}/uihost/bin/omg --output="./face_detection" --model="./face_detection.prototxt" --framework=0 --ddk_version=${tools_version} --weight="./face_detection.caffemodel" --input_shape=`head -1 $HOME/AscendProjects/sample-facedetection/MyModel/shape_face_detection` --insert_op_conf=$HOME/AscendProjects/sample-facedetection/MyModel/aipp_face_detection.cfg --op_name_map=$HOME/AscendProjects/sample-facedetection/MyModel/reassign_operators
             ```
 
             >![](public_sys-resources/icon-note.gif) **说明：**   
