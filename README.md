@@ -17,7 +17,7 @@ Before running the application, obtain the source code package and configure the
 
 1.  <a name="en-us_topic_0182554577_li953280133816"></a>Obtain the source code package.
 
-    Download all the code in the sample-facedetection repository at  [https://gitee.com/Atlas200DK/sample-facedetection](https://gitee.com/Atlas200DK/sample-facedetection)  to any directory on Ubuntu Server where  Mind Studio  is located as the  Mind Studio  installation user, for example,  $HOME/sample-facedetection/.
+    Download all the code in the sample-facedetection repository at  [https://github.com/Atlas200DKTest/sample-facedetection](https://github.com/Atlas200DKTest/sample-facedetection)  to any directory on Ubuntu Server where  Mind Studio  is located as the  Mind Studio  installation user, for example,  $HOME/sample-facedetection/.
 
 2.  <a name="en-us_topic_0182554577_li1365682471610"></a>Obtain the source network model required by the application.
 
@@ -39,7 +39,7 @@ Before running the application, obtain the source code package and configure the
     <td class="cellrowborder" valign="top" width="10.03%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0182554577_p167411934194719"><a name="en-us_topic_0182554577_p167411934194719"></a><a name="en-us_topic_0182554577_p167411934194719"></a>Network model for face detection.</p>
     <p id="en-us_topic_0182554577_p1337174414715"><a name="en-us_topic_0182554577_p1337174414715"></a><a name="en-us_topic_0182554577_p1337174414715"></a>It is a network model converted from ResNet10-SSD300 model based on Caffe.</p>
     </td>
-    <td class="cellrowborder" valign="top" width="76.36%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0182554577_p110671813170"><a name="en-us_topic_0182554577_p110671813170"></a><a name="en-us_topic_0182554577_p110671813170"></a>Download the source network model file and its weight file by referring to<strong id="en-us_topic_0182554577_b10408165011127"><a name="en-us_topic_0182554577_b10408165011127"></a><a name="en-us_topic_0182554577_b10408165011127"></a> README.md</strong> in <a href="https://gitee.com/HuaweiAscend/models/tree/master/computer_vision/object_detect/face_detection" target="_blank" rel="noopener noreferrer">https://gitee.com/HuaweiAscend/models/tree/master/computer_vision/object_detect/face_detection</a>.</p>
+    <td class="cellrowborder" valign="top" width="76.36%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0182554577_p110671813170"><a name="en-us_topic_0182554577_p110671813170"></a><a name="en-us_topic_0182554577_p110671813170"></a>Download the source network model file and its weight file by referring to<strong id="en-us_topic_0182554577_b10408165011127"><a name="en-us_topic_0182554577_b10408165011127"></a><a name="en-us_topic_0182554577_b10408165011127"></a> README.md</strong> in <a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/object_detect/face_detection" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/object_detect/face_detection</a>.</p>
     </td>
     </tr>
     </tbody>
@@ -233,7 +233,7 @@ Download the dependent software libraries to the  **sample-facedetection/script*
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0182554577_p543917207336"><a name="en-us_topic_0182554577_p543917207336"></a><a name="en-us_topic_0182554577_p543917207336"></a>Encapsulates the DVPP interface and provides image and video processing capabilities, such as color gamut conversion and image / video conversion</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0182554577_p7439122023313"><a name="en-us_topic_0182554577_p7439122023313"></a><a name="en-us_topic_0182554577_p7439122023313"></a><a href="https://gitee.com/Atlas200DK/sdk-ezdvpp" target="_blank" rel="noopener noreferrer">https://gitee.com/Atlas200DK/sdk-ezdvpp</a></p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0182554577_p7439122023313"><a name="en-us_topic_0182554577_p7439122023313"></a><a name="en-us_topic_0182554577_p7439122023313"></a><a href="https://github.com/Atlas200DKTest/sdk-ezdvpp" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200DKTest/sdk-ezdvpp</a></p>
 <p id="en-us_topic_0182554577_p14439520183315"><a name="en-us_topic_0182554577_p14439520183315"></a><a name="en-us_topic_0182554577_p14439520183315"></a>After the download, keep the folder name <span class="filepath" id="en-us_topic_0182554577_filepath1243922012337"><a name="en-us_topic_0182554577_filepath1243922012337"></a><a name="en-us_topic_0182554577_filepath1243922012337"></a><b>ezdvpp</b></span>.</p>
 </td>
 </tr>
@@ -241,7 +241,7 @@ Download the dependent software libraries to the  **sample-facedetection/script*
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0182554577_p54407202337"><a name="en-us_topic_0182554577_p54407202337"></a><a name="en-us_topic_0182554577_p54407202337"></a><span>API for interacting with the Presenter Server</span>.</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0182554577_p134402020123313"><a name="en-us_topic_0182554577_p134402020123313"></a><a name="en-us_topic_0182554577_p134402020123313"></a><a href="https://gitee.com/Atlas200DK/sdk-presenter/tree/master" target="_blank" rel="noopener noreferrer">https://gitee.com/Atlas200DK/sdk-presenter/tree/master</a></p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0182554577_p134402020123313"><a name="en-us_topic_0182554577_p134402020123313"></a><a name="en-us_topic_0182554577_p134402020123313"></a><a href="https://github.com/Atlas200DKTest/sdk-presenter/tree/master" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200DKTest/sdk-presenter/tree/master</a></p>
 <p id="en-us_topic_0182554577_p5440152033310"><a name="en-us_topic_0182554577_p5440152033310"></a><a name="en-us_topic_0182554577_p5440152033310"></a>Obtain the presenteragent folder in this path, after the download, keep the folder name <span class="filepath" id="en-us_topic_0182554577_filepath1440192033318"><a name="en-us_topic_0182554577_filepath1440192033318"></a><a name="en-us_topic_0182554577_filepath1440192033318"></a><b>presenteragent</b></span>.</p>
 </td>
 </tr>
