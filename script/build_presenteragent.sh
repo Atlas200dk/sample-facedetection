@@ -14,7 +14,7 @@ function download_code()
         return 0
     else
         echo "Download presenteragent code..."
-        presenteragent_download_url="https://gitee.com/Atlas200DK/sdk-presenter/repository/archive/1.2.0?format=zip"
+        presenteragent_download_url="https://github.com/Atlas200DKTest/sdk-presenter/repository/archive/1.2.0.zip"
         wget -O ${script_path}/presenteragent-${presenteragent_version}.ing ${presenteragent_download_url} --no-check-certificate 1>/dev/null 2>&1
     fi
     if [[ $? -ne 0 ]];then
