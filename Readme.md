@@ -1,3 +1,5 @@
+中文|[英文](Readme_en.md)
+
 # 人脸检测<a name="ZH-CN_TOPIC_0208834076"></a>
 
 开发者可以将本application部署至Atlas 200DK上实现对摄像头数据的实时采集、并对视频中的人脸信息进行预测的功能。
