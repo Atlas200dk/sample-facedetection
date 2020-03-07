@@ -4,7 +4,7 @@ EN|[CN](Readme.md)
 
 Developers can deploy the application on the Atlas 200 DK to collect camera data in real time and predict facial information in the video.
 
-Application in the current branch is adapted to [DDK&RunTime] with **1.31.0.0 and the above** version (https://ascend.huawei.com/resources)。
+Application in the current branch is adapted to [DDK&RunTime](https://ascend.huawei.com/resources) with **1.31.0.0 and the above** version 
 
 ## Prerequisites<a name="zh-cn_topic_0203223294_section137245294533"></a>
 
@@ -229,7 +229,7 @@ Before running the application, obtain the source code package and configure the
 
 4.  <a name="zh-cn_topic_0203223294_li499911453439"></a>Start Presenter Server.
 
-     Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1] by default(#zh-cn_topic_0203223294_li953280133816)中, run the following command to start the **Presenter Server** main program of the **Face Detection**application, as shown in [Figure 9][(#zh-cn_topic_0203223294_fig423515251067).
+     Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1] by default(#zh-cn_topic_0203223294_li953280133816), run the following command to start the **Presenter Server** main program of the **Face Detection**application, as shown in [Figure 9](#zh-cn_topic_0203223294_fig423515251067).
 
     **bash run\_present\_server.sh**
 
@@ -290,7 +290,7 @@ Before running the application, obtain the source code package and configure the
     >![](public_sys-resources/icon-note.gif) **NOTE：**   
     >-    The **Presenter Server** of the face detection application supports a maximum of 10 channels at the same time \(each  **_presenter\_view\_app\_name_**  parameter corresponds to a channel\).  
     >-   Due to hardware limitations, the maximum frame rate supported by each channel is 20fps, a lower frame rate is automatically used when the network bandwidth is low.  
-3.  Click  **View Name**  column on the right, for example **image**  or  **video**, and view the result. The confidence of the detected face is marked. 
+3.  Click  **View Name**  column on the right, for example **video** shown as above, and view the result. The confidence of the detected face is marked. 
 
 ## Follow-up Operations<a name="zh-cn_topic_0203223294_section177619345260"></a>
 
