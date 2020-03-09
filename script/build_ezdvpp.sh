@@ -29,7 +29,7 @@ function download_code()
         echo "ERROR: uncompress ezdvpp tar.gz file failed, please check ${ezdvpp_download_url} connection."
         return 1
     fi
-    mv ${AGENT_PATH}/sdk-ezdvpp ${AGENT_PATH}/ezdvpp
+    mv ${AGENT_PATH}/sdk-ezdvpp-${ezdvpp_version} ${AGENT_PATH}/ezdvpp
     rm -rf ${AGENT_PATH}/${ezdvpp_version}
     return 0
 }
@@ -41,6 +41,14 @@ function build_ezdvpp()
         echo "EZdvpp so is found.."
         return 0
     fi
+
+    ezdvpp_path=`find $DDK_HOME/../RC -maxdepth 3 -name "libDvpp_api.so" 2> /dev/null`
+    if [[ ! ${ezdvpp_path} ]];then
+        echo "[ERROR]libDvpp so can not found"
+    fi
+    ezdvpp_dir_path=`dirname $ezdvpp_path`
+    export NPU_DEV_LIB=${ezdvpp_dir_path}
+    
     make clean -C ${AGENT_PATH}/ezdvpp 1>/dev/null
     if [[ $? -ne 0 ]];then
         echo "ERROR: compile ezdvpp failed, please check the env."
