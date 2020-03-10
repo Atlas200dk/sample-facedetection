@@ -13,6 +13,10 @@
 -   已完成Mind Studio的安装。
 -   已完成Atlas 200 DK开发者板与Mind Studio的连接，交叉编译器的安装，SD卡的制作及基本信息的配置等。
 
+## 部署
+1. 部署，可以选择如下快速部署或者常规方法部署，二选一即可；
+    1.1 快速部署，请参考：https://gitee.com/Atlas200DK/faster-deploy 。
+
 ## 软件准备<a name="zh-cn_topic_0203223294_section081240125311"></a>
 
 运行此Sample前，需要按照此章节获取源码包，进行相关的环境配置并准备模型文件。
