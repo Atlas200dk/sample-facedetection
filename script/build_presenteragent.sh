@@ -34,7 +34,7 @@ function download_code()
     cp -rf ${AGENT_PATH}/sdk-presenter-${presenteragent_version}/presenteragent/* ${AGENT_PATH}/presenteragent/
 
     rm -rf ${AGENT_PATH}/presenteragent-${presenteragent_version}.zip
-    rm -rf ${AGENT_PATH}/sdk-presenter
+    rm -rf ${AGENT_PATH}/sdk-presenter-${presenteragent_version}
     return 0
 
 }
