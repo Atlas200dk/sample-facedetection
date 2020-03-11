@@ -77,7 +77,11 @@
     **图 3**  执行deploy脚本<a name="zh-cn_topic_0182554577_fig19292258105419"></a>  
     
     ![](figures/deploy_facedetection.png)
-
+    
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >-   首次deploy时，没有部署第三方库时会自动下载并编译，耗时可能比较久，请耐心等待。后续再重新编译时，不会重复下载编译，部署如上图所示。
+    >-   deploy时，需要选择与开发板通信的主机侧ip，一般为虚拟网卡配置的ip。如果此ip和开发板ip属于同网段，则会自动选择并部署。如果非同网段，则需要手动输入与开发板通信的主机侧ip才能完成deploy。
+    
 4.  开始编译，打开Mindstudio工具，在工具栏中点击**Build \> Build \> Build-Configuration**。如[图 编译操作及生成文件](#zh-cn_topic_0203223294_fig1625447397)所示，会在目录下生成build和run文件夹。
 
     **图 4**  编译操作及生成文件<a name="zh-cn_topic_0203223294_fig1625447397"></a>  
@@ -88,7 +92,7 @@
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >首次编译工程时，**Build \> Build**为灰色不可点击状态。需要点击**Build \> Edit Build Configuration**，配置编译参数后再进行编译。  
     >![](figures/build_configuration.png)  
-
+    
 5.  <a name="zh-cn_topic_0203223294_li499911453439"></a>启动Presenter Server。
 
     打开Mind Studio工具的Terminal，此时默认在[步骤1](#zh-cn_topic_0203223294_li953280133816)中的代码存放路径下，执行如下命令在后台启动Face Detection应用的Presenter Server主程序。如[图 启动PresenterServer](#zh-cn_topic_0203223294_fig423515251067)所示。
