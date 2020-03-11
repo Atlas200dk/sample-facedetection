@@ -19,7 +19,7 @@ Before using an open source application, ensure that:
    1.1 Faster deployment, refer to https://gitee.com/Atlas200DK/faster-deploy 。
     >![](public_sys-resources/icon-note.gif) **NOTE：**   
     >-   This faster deployment script can quickly deploy multiple cases, select face detection case for this project.
-    >-   This faser deployment automatically performs code download, model conversion and environment variable configuration. For details, choose conventional deployment method, as shown in 1.2.
+    >-   This faster deployment automatically performs code download, model conversion and environment variable configuration. For details, choose conventional deployment method, as shown in 1.2.
     
    1.2 Conventional deployment, refer to : https://gitee.com/Atlas200DK/sample-README/tree/master/sample-facedetection 。
     >![](public_sys-resources/icon-note.gif) **NOTE：**   
