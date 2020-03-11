@@ -14,12 +14,12 @@ Before using an open source application, ensure that:
 -   The Atlas 200 DK developer board has been connected to  **Mind Studio**, the cross compiler has been installed, the SD card has been prepared, and basic information has been configured.
 
 ## Deployment
-1. Deployment: choose either faster-deployment or conventional deployment as shown below: 
+1. Deployment: choose either faster deployment or conventional deployment as shown below: 
 
-   1.1 Faster-deployment, refer to https://gitee.com/Atlas200DK/faster-deploy 。
+   1.1 Faster deployment, refer to https://gitee.com/Atlas200DK/faster-deploy 。
     >![](public_sys-resources/icon-note.gif) **NOTE：**   
-    >-   This faster-deployment script can quickly deploy multiple cases, select face detection case for this project.
-    >-   This faser-deployment automatically performs code download, model conversion and environment variable configuration. For details, choose conventional deployment method, as shown in 1.2.
+    >-   This faster deployment script can quickly deploy multiple cases, select face detection case for this project.
+    >-   This faser deployment automatically performs code download, model conversion and environment variable configuration. For details, choose conventional deployment method, as shown in 1.2.
     
    1.2 Conventional deployment, refer to : https://gitee.com/Atlas200DK/sample-README/tree/master/sample-facedetection 。
     >![](public_sys-resources/icon-note.gif) **NOTE：**   
@@ -36,14 +36,14 @@ Before using an open source application, ensure that:
 
      After successfully starting **Mind Studio**, open **sample-facedetection** project，as shown in [Figure 6](#zh-cn_topic_0203223294_fig05481157171918).
 
-    **Figure 6**  Open facedetection project<a name="zh-cn_topic_0203223294_fig05481157171918"></a>  
+    **Figure 1**  Open facedetection project<a name="zh-cn_topic_0203223294_fig05481157171918"></a>  
     
 
     ![](figures/打开工程项目-人脸检测.png)
 
 2.  Configure related project information in the **src/param\_configure.conf**, as shown in [Figure 7](#zh-cn_topic_0203223294_fig0391184062214).
 
-    **Figure 7**  Configuration file path<a name="zh-cn_topic_0203223294_fig0391184062214"></a>  
+    **Figure 2**  Configuration file path<a name="zh-cn_topic_0203223294_fig0391184062214"></a>  
     
 
     ![](figures/face_detection_src.png)
@@ -75,7 +75,7 @@ Before using an open source application, ensure that:
     >-   All the three parameters must be filled in, otherwise build cannot be passed.
     >-   Note that the "" symbol is no need to be used when filling in parameters.
 
-3.  Run the deployment script to adjust the configuration parameters, download and compile 3rd party libraries. Open the Terminal of **Mind Studio** tool, which is under the main code directory, run the following command to execute environment deployment in the backstage, as shown in [Figure 3](#zh-cn_topic_0182554577_fig19292258105419").
+3.  Run the deployment script to adjust the configuration parameters, download and compile 3rd party libraries. Open the Terminal of **Mind Studio** tool, which is under the main code directory, run the following command to execute environment deployment in the backstage, as shown in [Figure 3](#zh-cn_topic_0182554577_fig19292258105419).
     
     **Figure 3**  Execute deployment script<a name="zh-cn_topic_0182554577_fig19292258105419"></a>  
     
@@ -98,7 +98,7 @@ Before using an open source application, ensure that:
 
 5.  <a name="zh-cn_topic_0203223294_li499911453439"></a>Start Presenter Server.
 
-     Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1] by default(#zh-cn_topic_0203223294_li953280133816), run the following command to start the **Presenter Server** main program of the **Face Detection**application, as shown in [Figure 5](#zh-cn_topic_0203223294_fig423515251067).
+     Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1](#zh-cn_topic_0203223294_li953280133816) by default, run the following command to start the **Presenter Server** main program of the **Face Detection**application, as shown in [Figure 5](#zh-cn_topic_0203223294_fig423515251067).
 
     **bash run\_present\_server.sh**
 
@@ -149,7 +149,7 @@ Before using an open source application, ensure that:
 
     ![](figures/face_detection_run.png)
 
-2.  Log in to the **Presenter Server** website using the URL promoted when starting the **Presenter Server** service（only supports Chrome browser）, for details, please refer to [Step 4](#zh-cn_topic_0203223294_li499911453439).
+2.  Log in to the **Presenter Server** website using the URL promoted when starting the **Presenter Server** service（only supports Chrome browser）, for details, please refer to [Step 5](#zh-cn_topic_0203223294_li499911453439).
 
     ait for Presenter Agent to transmit data to the server. Click  **Refresh**. When there is data, the icon in the  **Status**  column for the corresponding channel changes to green, as shown in  [Figure 11](#zh-cn_topic_0203223294_fig113691556202312).
 
