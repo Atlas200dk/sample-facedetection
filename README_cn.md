@@ -17,7 +17,7 @@
 
 1.  <a name="zh-cn_topic_0182554577_li953280133816"></a>获取源码包。
 
-    将[https://github.com/Atlas200DKTest/sample-facedetection](https://github.com/Atlas200DKTest/sample-facedetection)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：$HOME/sample-facedetection。
+    将[https://github.com/Atlas200dk/sample-facedetection](https://github.com/Atlas200dk/sample-facedetection)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：$HOME/sample-facedetection。
 
 2.  <a name="zh-cn_topic_0182554577_li1365682471610"></a>获取此应用中所需要的原始网络模型。
 
@@ -39,7 +39,7 @@
     <td class="cellrowborder" valign="top" width="10.03%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554577_p13106171831710"><a name="zh-cn_topic_0182554577_p13106171831710"></a><a name="zh-cn_topic_0182554577_p13106171831710"></a>人脸检测网络模型。</p>
     <p id="zh-cn_topic_0182554577_p18106718131714"><a name="zh-cn_topic_0182554577_p18106718131714"></a><a name="zh-cn_topic_0182554577_p18106718131714"></a>此模型是基于Caffe的Resnet10-SSD300模型转换后的网络模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="76.36%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554577_p110671813170"><a name="zh-cn_topic_0182554577_p110671813170"></a><a name="zh-cn_topic_0182554577_p110671813170"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/object_detect/face_detection" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/object_detect/face_detection</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="76.36%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554577_p110671813170"><a name="zh-cn_topic_0182554577_p110671813170"></a><a name="zh-cn_topic_0182554577_p110671813170"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/object_detect/face_detection" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/object_detect/face_detection</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     </tbody>
@@ -234,7 +234,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554577_p349393413588"><a name="zh-cn_topic_0182554577_p349393413588"></a><a name="zh-cn_topic_0182554577_p349393413588"></a>对DVPP接口进行了封装，提供对图片/视频的处理能力。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554577_p1949313416583"><a name="zh-cn_topic_0182554577_p1949313416583"></a><a name="zh-cn_topic_0182554577_p1949313416583"></a><a href="https://github.com/Atlas200DKTest/sdk-ezdvpp" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200DKTest/sdk-ezdvpp</a></p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554577_p1949313416583"><a name="zh-cn_topic_0182554577_p1949313416583"></a><a name="zh-cn_topic_0182554577_p1949313416583"></a><a href="https://github.com/Atlas200dk/sdk-ezdvpp" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200dk/sdk-ezdvpp</a></p>
 <p id="zh-cn_topic_0182554577_p74931134115816"><a name="zh-cn_topic_0182554577_p74931134115816"></a><a name="zh-cn_topic_0182554577_p74931134115816"></a>下载后请保持文件夹名称为ezdvpp。</p>
 </td>
 </tr>
@@ -242,7 +242,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554577_p5493634115811"><a name="zh-cn_topic_0182554577_p5493634115811"></a><a name="zh-cn_topic_0182554577_p5493634115811"></a>与Presenter Server进行交互的API接口。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554577_p1949416349581"><a name="zh-cn_topic_0182554577_p1949416349581"></a><a name="zh-cn_topic_0182554577_p1949416349581"></a><a href="https://github.com/Atlas200DKTest/sdk-presenter/tree/master" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200DKTest/sdk-presenter/tree/master</a></p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554577_p1949416349581"><a name="zh-cn_topic_0182554577_p1949416349581"></a><a name="zh-cn_topic_0182554577_p1949416349581"></a><a href="https://github.com/Atlas200dk/sdk-presenter/tree/master" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200dk/sdk-presenter/tree/master</a></p>
 <p id="zh-cn_topic_0182554577_p124947348588"><a name="zh-cn_topic_0182554577_p124947348588"></a><a name="zh-cn_topic_0182554577_p124947348588"></a>请获取此路径下的presenteragent文件夹，下载后请保持文件夹名称为presenteragent。</p>
 </td>
 </tr>
