@@ -1,69 +1,71 @@
-EN|[CN](Readme_cn.md)
+English|[中文](Readme_CN.md)
 
-# Face Detection<a name="ZH-CN_TOPIC_0208834076"></a>
+# Face Detection<a name="EN-US_TOPIC_0228461904"></a>
 
-Developers can deploy the application on the Atlas 200 DK to collect camera data in real time and predict facial information in the video.
+You can deploy this application on the Atlas 200 DK to collect camera data in real time and predict facial information in the video.
 
-Application in the current branch is adapted to [DDK&RunTime](https://ascend.huawei.com/resources) with **1.31.0.0 and the above** version 
+The applications in the current version branch adapt to  [DDK&RunTime](https://ascend.huawei.com/resources) **1.32.0.0 and later**.
 
-## Prerequisites<a name="zh-cn_topic_0203223294_section137245294533"></a>
+## Prerequisites<a name="section137245294533"></a>
 
-Before using an open source application, ensure that:
+Before deploying this sample, ensure that:
 
--   **Mind Studio**  has been installed.
--   The Atlas 200 DK developer board has been connected to  **Mind Studio**, the cross compiler has been installed, the SD card has been prepared, and basic information has been configured.
+-   Mind Studio  has been installed.
+-   The Atlas 200 DK developer board has been connected to  Mind Studio, the cross compiler has been installed, the SD card has been prepared, and basic information has been configured.
 
-## Deployment
-1. Deployment: choose either faster deployment or conventional deployment as shown below: 
+## Deployment<a name="section412811285117"></a>
 
-   1.1 Faster deployment, refer to https://github.com/Atlas200dk/faster-deploy.git 。
-    >![](public_sys-resources/icon-note.gif) **NOTE：**   
-    >-   This faster deployment script can quickly deploy multiple cases, select face detection case for this project.
-    >-   This faster deployment automatically performs code download, model conversion and environment variable configuration. For details, choose conventional deployment method, as shown in 1.2.
-    
-   1.2 Conventional deployment, refer to : https://github.com/Atlas200dk/sample-README/tree/master/sample-facedetection 。
-    >![](public_sys-resources/icon-note.gif) **NOTE：**   
-    >-   This deployment method requires manually performing code download, model conversion and environment variable configuration. A better understand of the deployment process can be obtained from this method.
-    
-## Compile<a name="zh-cn_topic_0203223294_section7994174585917"></a>
+You can use either of the following methods:
 
-1.  Open the corresponding project.
+1.  Quick deployment: visit  [https://github.com/Atlas200dk/faster-deploy](https://github.com/Atlas200dk/faster-deploy).
 
-    Enter the “**MindStudio-ubuntu/bin**” directory after decompressing the installation package in the command line, for example, **$HOME/MindStudio-ubuntu/bin**. Run the following command to start **Mind Studio**:
+    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >-   The quick deployment script can be used to deploy multiple samples rapidly. Select the face detection deployment sample.  
+    >-   The quick deployment script automatically completes code download, model conversion, and environment variable configuration. To learn about the detailed deployment process, go to  [2. Common deployment](#li3208251440).  
 
+2.  <a name="li3208251440"></a>Common deployment: visit  [https://github.com/Atlas200dk/sample-README/tree/master/sample-facedetection](https://github.com/Atlas200dk/sample-README/tree/master/sample-facedetection).
+
+    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >-   In this deployment mode, you need to manually download code, convert models, and configure environment variables.  
+
+
+## Building a Project<a name="section7994174585917"></a>
+
+1.  Open the project.
+
+    Go to the directory that stores the decompressed installation package as the Mind Studio installation user in CLI mode, for example,  **$HOME/MindStudio-ubuntu/bin**. Run the following command to start Mind Studio:
 
     **./MindStudio.sh**
 
-     After successfully starting **Mind Studio**, open **sample-facedetection** project，as shown in [Figure 6](#zh-cn_topic_0203223294_fig05481157171918).
+    Open the  **sample-facedetection**  project, as shown in  [Figure 1](#en-us_topic_0203223294_fig05481157171918).
 
-    **Figure 1**  Open facedetection project<a name="zh-cn_topic_0203223294_fig05481157171918"></a>  
+    **Figure  1**  Opening the facedetection project<a name="en-us_topic_0203223294_fig05481157171918"></a>  
     
 
     ![](figures/打开工程项目-人脸检测.png)
 
-2.  Configure related project information in the **src/param\_configure.conf**, as shown in [Figure 7](#zh-cn_topic_0203223294_fig0391184062214).
+2.  Configure project information in the  **src/param\_configure.conf**  file.
 
-    **Figure 2**  Configuration file path<a name="zh-cn_topic_0203223294_fig0391184062214"></a>  
+    For details, see  [Figure 2](#en-us_topic_0203223294_fig0391184062214).
+
+    **Figure  2**  Configuration file<a name="en-us_topic_0203223294_fig0391184062214"></a>  
     
 
     ![](figures/face_detection_src.png)
 
-    The configuration file is as follows:
-
+    Content of the configuration file:
 
     ```
     remote_host=
     data_source=
     presenter_view_app_name=
     ```
-    
-    Following parameter configuration needs to be added manually：
 
-    -   remote\_host：indicates the IP address of Atlas 200 DK developer board.
-    -   data\_source : Indicates the channel to which a camera belongs to. This parameter can be set to **Channel-1** or **Channel-2**. For details, see **"View the Channel to Which a Camera Belongs"** of[Atlas 200 DK User Guidance](https://ascend.huawei.com/documentation).
-    -   presenter\_view\_app\_name : The user-defined View Name on the PresenterServer interface, this View Name needs to be unique  on the Presenter Server. It can only be a combination of uppercase and lowercase letters, numbers, and "\/", with a digit of at least 1.
+    -   **remote\_host**: IP address of the Atlas 200 DK developer board
+    -   _data\_source_: camera channel. The value can be  **Channel-1**  or  **Channel-2**. For details, see  **Viewing the Channel to Which a Camera Belongs**  in  [Atlas 200 DK User Guide](https://ascend.huawei.com/documentation).
+    -   _presenter\_view\_app\_name_: value of  **View Name**  on the  **Presenter Server**  page, which must be unique. The value consists of at least one character and supports only uppercase letters, lowercase letters, digits, and underscores \(\_\).
 
-    An example of configuration is as follows:
+    Configuration example:
 
     ```
     remote_host=192.168.1.2
@@ -71,120 +73,128 @@ Before using an open source application, ensure that:
     presenter_view_app_name=video
     ```
 
-    >![](public_sys-resources/icon-note.gif) **NOTE：**   
-    >-   All the three parameters must be filled in, otherwise build cannot be passed.
-    >-   Note that the "" symbol is no need to be used when filling in parameters.
+    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >-   All the three parameters must be set. Otherwise, the build fails.  
+    >-   Do not use double quotation marks \(""\) during parameter settings.  
 
-3.  Run the deployment script to adjust the configuration parameters, download and compile 3rd party libraries. Open the Terminal of **Mind Studio** tool, which is under the main code directory, run the following command to execute environment deployment in the backstage, as shown in [Figure 3](#zh-cn_topic_0182554577_fig19292258105419).
-    
-    **Figure 3**  Execute deployment script<a name="zh-cn_topic_0182554577_fig19292258105419"></a>  
-    
-    ![](figures/deploy_facedetection.png)
-    
-    >![](public_sys-resources/icon-note.gif) **NOTE：**   
-    >-   Automatic download and compilation will perform if 3rd party libraries are not deployed for the first time of deployment. This process might take some time, please wait patiently. It will not download and compilation repeatedly when recompiling later, deployment is shown as above. 
-    >-   Select the HOST IP connected to the developer board when deploying, which is usually the IP of virtual network card. If this IP belongs to the same segment as the developer board IP, it will be selected automatically and deployed. Otherwise, manual entering the IP connected to developer board is required for deployment.
-    
-4.  Begin to compile, open **Mind Studio** tool, click **Build \> Build \> Build-Configuration** in the toolbar, shown as [Figure 4](#zh-cn_topic_0203223294_fig1625447397), **build** and **run** folders will be generated under the directory.
+3.  Run the  **deploy.sh**  script to adjust configuration parameters and download and compile the third-party library. Open the  **Terminal**  window of Mind Studio. By default, the home directory of the code is used. Run the  **deploy.sh**  script in the background to deploy the environment, as shown in  [Executing the deploy script](#en-us_topic_0203223294_fig107831626101910).
 
-    **Figure 4**  Compilation operation and generated files<a name="zh-cn_topic_0203223294_fig1625447397"></a>  
+    **Figure  3**  Execute the deploy script.<a name="en-us_topic_0203223294_fig107831626101910"></a>  
+    ![](figures/execute-the-deploy-script.png "execute-the-deploy-script")
+
+    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >-   During the first deployment, if no third-party library is used, the system automatically downloads and compiles a third-party library, which may take a long time. The third-party library can be directly used for the subsequent compilation.  
+    >-   During deployment, select the IP address of the host that communicates with the developer board. Generally, the IP address is that configured for the virtual NIC. If the IP address is in the same network segment as the IP address of the developer board, it is automatically selected for deployment. If they are not in the same network segment, you need to manually type the IP address of the host that communicates with the Atlas 200 DK to complete the deployment.  
+
+4.  Start the build. Open Mind Studio and choose  **Build \> Build \> Build-Configuration**  from the main menu. The  **build**  and  **run**  folders are generated in the directory, as shown in  [Figure 4](#en-us_topic_0203223294_fig1625447397).
+
+    **Figure  4**  Build and file generating<a name="en-us_topic_0203223294_fig1625447397"></a>  
     
 
     ![](figures/face_detection_build.png)
 
-    >![](public_sys-resources/icon-note.gif) **NOTE：**   
-    >>When you compile the project for the first time, **Build \> Build** is gray and not clickable. Your need to click **Build \> Edit Build Configuration**, configure the compilation parameters and then compile.  
-    >![](figures/build_configuration.png)  
+    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >When you build a project for the first time,  **Build \> Build**  is unavailable. You need to choose  **Build \> Edit Build Configuration**  to set parameters before the build.  
 
-5.  <a name="zh-cn_topic_0203223294_li499911453439"></a>Start Presenter Server.
+5.  Start Presenter Server.<a name="en-us_topic_0203223294_fig423515252222"></a>  
 
-     Open **Terminal** of **Mind Studio** tool, it is in the path where code saved in [Step 1](#zh-cn_topic_0203223294_li953280133816) by default, run the following command to start the **Presenter Server** main program of the **Face Detection**application, as shown in [Figure 5](#zh-cn_topic_0203223294_fig423515251067).
+    Open the  **Terminal**  window of Mind Studio. Under the code storage path, run the following command to start the Presenter Server program of the face detection application on the server, as shown in  [Figure 5](#en-us_topic_0203223294_fig423515251067):
 
     **bash run\_present\_server.sh**
 
-    **Figure 5**  Start PresenterServer<a name="zh-cn_topic_0203223294_fig423515251067"></a>  
+    **Figure  5**  Starting Presenter Server<a name="en-us_topic_0203223294_fig423515251067"></a>  
     
 
     ![](figures/face_detection_presentserver1.png)
 
-     -   When the message "Please choose one to show the presenter in browser (default: 127.0.0.1):" is displayed, enter the IP address used for accessing the **Presenter Server** service in the browser. Generally, the IP address is the IP address for accessing the **Mind Studio** service.
+    When the message  **Please choose one to show the presenter in browser\(default: 127.0.0.1\):**  is displayed, type the IP address \(usually IP address for accessing Mind Studio\) used for accessing the Presenter Server service in the browser.
 
-    As shown in [Figure 6](#zh-cn_topic_0203223294_fig999812514814), Select the IP address used by the browser to access the Presenter Server service in "Current environment valid ip list" and enter the path for storing video analysis data.
+    Select the IP address used by the browser to access the Presenter Server service in  **Current environment valid ip list**, as shown in  [Figure 6](#en-us_topic_0203223294_fig999812514814).
 
-    **Figure 6**  Project deployment<a name="zh-cn_topic_0203223294_fig999812514814"></a>  
+    **Figure  6**  Project deployment<a name="en-us_topic_0203223294_fig999812514814"></a>  
     
 
     ![](figures/face_detection_presentserver2.png)
 
-    As shown in [Figure 7](#zh-cn_topic_0203223294_fig69531305324) it means **presenter\_server**  service starts successfully.
+    [Figure 7](#en-us_topic_0203223294_fig69531305324)  shows that the presenter\_server service is started successfully.
 
-    **Figure 7**  Starting the Presenter Server process<a name="zh-cn_topic_0203223294_fig69531305324"></a>  
+    **Figure  7**  Starting the Presenter Server process<a name="en-us_topic_0203223294_fig69531305324"></a>  
     
 
     ![](figures/face_detection_presentserver3.png)
 
-    Use the URL shown in the preceding figure to log in to **Presenter Server** (only the Chrome browser is supported). The IP address is that entered in [Figure 8](#zh-cn_topic_0203223294_fig999812514814) and the default port number is 7007. The following figure indicates that **Presenter Server** is started successfully.
+    Use the URL shown in the preceding figure to log in to Presenter Server \(only Google Chrome is supported\). The IP address is that typed in  [Figure 6](#en-us_topic_0203223294_fig999812514814)  and the default port number is  **7007**. The following figure indicates that Presenter Server has been started successfully.
 
-    **Figure 8**  Home page<a name="zh-cn_topic_0203223294_fig64391558352"></a>  
-    ![](figures/主页显示.png "Home page")
+    **Figure  8**  Home page<a name="en-us_topic_0203223294_fig64391558352"></a>  
+    ![](figures/home-page.png "home-page")
 
-    The following figure shows the IP address used by the **Presenter Server** and **Mind Studio** to communicate with the Atlas 200 DK.
-    
+    The following figure shows the IP address used by Presenter Server and  Mind Studio  to communicate with the Atlas 200 DK.
 
-    **Figure 9**  Example IP Address<a name="zh-cn_topic_0203223294_fig1881532172010"></a>  
-    ![](figures/IP地址示例.png "Example IP Address")
+    **Figure  9**  IP address example<a name="en-us_topic_0203223294_fig1881532172010"></a>  
+    ![](figures/ip-address-example.png "ip-address-example")
 
-    -   The IP address of the Atlas 200 DK developer board is 192.168.1.2 (connected in USB mode).
-    -   The IP address used by the **Presenter Server** to communicate with the Atlas 200 DK is in the same network segment as the IP address of the Atlas 200 DK on the UI Host server. For example: 192.168.1.223.
-    -   The following is an example of accessing the IP address of the **Presenter Server** using a browser: 10.10.0.1, because the Presenter Server and **Mind Studio** are deployed on the same server, the IP address is also the IP address for accessing the Mind Studio through the browser.
+    Where:
 
-## Running<a name="zh-cn_topic_0203223294_section551710297235"></a>
+    -   The IP address of the Atlas 200 DK developer board is  **192.168.1.2**  \(connected in USB mode\).
+    -   The IP address used by the Presenter Server to communicate with the Atlas 200 DK is in the same network segment as the IP address of the Atlas 200 DK on the UI Host server. For example:  **192.168.1.223**.
+    -   The following describes how to access the IP address \(such as  **10.10.0.1**\) of Presenter Server using a browser. Because Presenter Server and  Mind Studio  are deployed on the same server, you can access  Mind Studio  through the browser using the same IP address. 
 
-1.  Run the Face Detection application.
 
-    Find **Run** button in the toolbar of **Mind Studio** tool, click **Run \> Run 'sample-facedetection'**, as shown in [Figure 10](#zh-cn_topic_0203223294_fig93931954162719), the executable program has been executed on the developer board.
-    
-    **Figure 10**  Executed program<a name="zh-cn_topic_0203223294_fig93931954162719"></a>  
+## Run<a name="section551710297235"></a>
+
+1.  Run the face detection application.
+
+    On the toolbar of Mind Studio, click  **Run**  and choose  **Run \> Run 'sample-facedetection'**. As shown in  [Figure 10](#en-us_topic_0203223294_fig93931954162719), the executable program is running on the developer board.
+
+    **Figure  10**  Application running sample<a name="en-us_topic_0203223294_fig93931954162719"></a>  
     
 
     ![](figures/face_detection_run.png)
 
-2.  Log in to the **Presenter Server** website using the URL promoted when starting the **Presenter Server** service（only supports Chrome browser）, for details, please refer to [Step 5](#zh-cn_topic_0203223294_li499911453439).
+2.  Use the URL displayed upon the start of the Presenter Server service to log in to Presenter Server. For details, see  [Start Presenter Server](#en-us_topic_0203223294_fig423515252222).
 
-    ait for Presenter Agent to transmit data to the server. Click  **Refresh**. When there is data, the icon in the  **Status**  column for the corresponding channel changes to green, as shown in  [Figure 11](#zh-cn_topic_0203223294_fig113691556202312).
+    Wait for Presenter Agent to transmit data to the server. Click  **Refresh**. When there is data, the icon in the  **Status**  column for the corresponding channel changes to green, as shown in the following figure.
 
-    **Figure 11**  Presenter Server page<a name="zh-cn_topic_0203223294_fig113691556202312"></a>  
-    ![](figures/Presenter-Server界面.png "Presenter Server page")
+    **Figure  11**  Presenter Server page<a name="en-us_topic_0203223294_fig113691556202312"></a>  
+    ![](figures/presenter-server-page.png "presenter-server-page")
 
-    >![](public_sys-resources/icon-note.gif) **NOTE：**   
-    >-    The **Presenter Server** of the face detection application supports a maximum of 10 channels at the same time \(each  **_presenter\_view\_app\_name_**  parameter corresponds to a channel\).  
-    >-   Due to hardware limitations, the maximum frame rate supported by each channel is 20fps, a lower frame rate is automatically used when the network bandwidth is low.  
-3.  Click  **View Name**  column on the right, for example **video** shown as above, and view the result. The confidence of the detected face is marked. 
+    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >-   For the face detection application, Presenter Server supports a maximum of 10 channels at the same time \(each  _presenter\_view\_app\_name_  parameter corresponds to a channel\).  
+    >-   Due to hardware limitations, each channel supports a maximum frame rate of 20 fps. A lower frame rate is automatically used when the network bandwidth is low.  
 
-## Follow-up Operations<a name="zh-cn_topic_0203223294_section177619345260"></a>
+3.  Run the  **deploy.sh**  script to adjust configuration parameters and download and compile the third-party library. Open the  **Terminal**  tab page of Mind Studio. By default, the home directory of the code is used. Run the  **deploy.sh**  script in the background to deploy the environment, as shown in the figure.
 
--   **Stopping  Face Detection application**
+    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >-   During the first deployment, if no third-party library is used, the system automatically downloads and compiles the third-party library, which may take a long time. The third-party library can be directly used for the subsequent compilation.  
+    >-   During deployment, select the IP address of the host that communicates with the developer board. Generally, the IP address is the IP address configured for the virtual NIC. If the IP address is in the same network segment as the IP address of the developer board, it is automatically selected for deployment. If they are not in the same network segment, you need to manually type the IP address of the host that communicates with the Atlas DK to complete the deployment.  
 
-    Face Detection is running continually after being executed. To stop it, perform the following operation:
+4.  Click the link \(such as  **video**  in the preceding figure\) in the  **View Name**  column to view the result. The confidence of the detected human face is marked.
 
-    Click the stop button to stop Face Detection application as shown in [Figure 12](#zh-cn_topic_0203223294_fig14326454172518).
+## Follow-up Operations<a name="section177619345260"></a>
 
-    **Figure 12**  Stopping Face Detection application<a name="zh-cn_topic_0203223294_fig14326454172518"></a>  
+-   **Stopping the Face Detection Application**
+
+    The face detection application is running continually after being executed. To stop it, perform the following operation:
+
+    Click the stop button shown in  [Figure 12](#en-us_topic_0203223294_fig14326454172518)  to stop the face detection application.
+
+    **Figure  12**  Stopping the Face Detection application<a name="en-us_topic_0203223294_fig14326454172518"></a>  
     
+
     ![](figures/face_detection_stopping.png)
 
-    As shown in [Figure 13](#zh-cn_topic_0203223294_fig2182182518112), the application has been stopped.
+    [Figure 13](#en-us_topic_0203223294_fig2182182518112)  shows that the face detection application has been stopped.
 
-    **Figure 13**  Face Detection application stops<a name="zh-cn_topic_0203223294_fig2182182518112"></a>  
+    **Figure  13**  Stop of the face detection application<a name="en-us_topic_0203223294_fig2182182518112"></a>  
     
 
     ![](figures/face_detection_stoped.png)
 
 -   **Stopping the Presenter Server Service**
 
-    The **Presenter Server** service is always in the running state after being started. To stop the **Presenter Server** service of the Face Detection application, perform the following operations: 
+    The Presenter Server service is always in running state after being started. To stop the Presenter Server service for the face detection application, perform the following operations:
 
-     Run the following command to check the process of the **Presenter Server** service corresponding to the Face Detection application as the **Mind Studio** installation user:
+    On the server with  Mind Studio  installed, run the following command as the  Mind Studio  installation user to check the process of the Presenter Server service corresponding to the face detection application:
 
     **ps -ef | grep presenter | grep face\_detection**
 
@@ -193,11 +203,10 @@ Before using an open source application, ensure that:
     ascend    7701  1615  0 14:21 pts/8    00:00:00 python3 presenterserver/presenter_server.py --app face_detection
     ```
 
-    Where  **_7701_**  indicates  the process ID of the **Presenter Server** service corresponding to **face\_detection**.
-    
+    In the preceding information,  _7701_  indicates the process ID of the Presenter Server service for the face detection application.
+
     To stop the service, run the following command:
 
     **kill -9** _7701_
-
 
 

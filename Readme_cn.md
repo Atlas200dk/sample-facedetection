@@ -1,31 +1,35 @@
-CN|[EN](Readme.md)
+中文|[English](Readme.md)
 
-# 人脸检测<a name="ZH-CN_TOPIC_0208834076"></a>
+# 人脸检测<a name="ZH-CN_TOPIC_0228461904"></a>
 
 开发者可以将本application部署至Atlas 200DK上实现对摄像头数据的实时采集、并对视频中的人脸信息进行预测的功能。
 
-当前分支中的应用适配**1.31.0.0及以上**版本的[DDK&RunTime](https://ascend.huawei.com/resources)。
+当前分支中的应用适配**1.32.0.0及以上**版本的[DDK&RunTime](https://ascend.huawei.com/resources)。
 
-## 前提条件<a name="zh-cn_topic_0203223294_section137245294533"></a>
+## 前提条件<a name="section137245294533"></a>
 
 部署此Sample前，需要准备好以下环境：
 
 -   已完成Mind Studio的安装。
 -   已完成Atlas 200 DK开发者板与Mind Studio的连接，交叉编译器的安装，SD卡的制作及基本信息的配置等。
 
-## 部署
-1. 部署，可以选择如下快速部署或者常规方法部署，二选一即可；
+## 部署<a name="section412811285117"></a>
 
-   1.1 快速部署，请参考：https://github.com/Atlas200dk/faster-deploy.git 。
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   该快速部署脚本可以快速部署多个案例，请选择人脸检测案例部署即可。 
-    >-   该快速部署脚本自动完成了代码下载、模型转换、环境变量配置等流程，如果需要了解详细的部署过程请选择常规部署方式，请转1.2 常规部署。
-    
-   1.2 常规部署，请参考：https://github.com/Atlas200dk/sample-README/tree/master/sample-facedetection 。
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   该部署方式，需要手动完成代码下载、模型转换、环境变量配置等过程。完成后，会对其中的过程会更加了解。
+可以选择如下快速部署或者常规方法部署，二选一即可：
 
-## 编译<a name="zh-cn_topic_0203223294_section7994174585917"></a>
+1.  快速部署，请参考：  [https://github.com/Atlas200dk/faster-deploy](https://github.com/Atlas200dk/faster-deploy)  。
+
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >-   该快速部署脚本可以快速部署多个案例，请选择人脸检测案例部署即可。  
+    >-   该快速部署脚本自动完成了代码下载、模型转换、环境变量配置等流程，如果需要了解详细的部署过程请选择常规部署方式。转: **[2. 常规部署](#li3208251440)**  
+
+2.  <a name="li3208251440"></a>常规部署，请参考：  [https://github.com/Atlas200dk/sample-README/tree/master/sample-facedetection](https://github.com/Atlas200dk/sample-README/tree/master/sample-facedetection)  。
+
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >-   该部署方式，需要手动完成代码下载、模型转换、环境变量配置等过程。完成后，会对其中的过程更加了解。  
+
+
+## 编译<a name="section7994174585917"></a>
 
 1.  打开对应的工程。
 
@@ -58,7 +62,7 @@ CN|[EN](Readme.md)
     ```
 
     -   remote\_host：配置为Atlas 200 DK开发者板的IP地址。
-    -   data\_source : 配置摄像头所属Channel，取值为Channel-1或者Channel-2，查询摄像头所属Channel的方法请参考[Atlas 200 DK使用指南](https://ascend.huawei.com/documentation)中的“如何查看摄像头所属Channel”。
+    -   data\_source : 配置摄像头所属Channel，取值为Channel-1或者Channel-2，查询摄像头所属Channel的方法请参考[Atlas 200 DK用户手册](https://ascend.huawei.com/doc/Atlas200DK/)中的“如何查看摄像头所属Channel”。
     -   presenter\_view\_app\_name : 用户自定义的在PresenterServer界面展示的View Name，此View Name需要在Presenter Server展示界面唯一，只能为大小写字母、数字、“/”的组合，位数至少1位。
 
     配置示例：
@@ -72,16 +76,16 @@ CN|[EN](Readme.md)
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >-   三个参数必须全部填写，否则无法通过编译。  
     >-   注意参数填写时不需要使用“”符号。  
-3.  执行deploy脚本， 进行配置参数调整及第三方库下载编译 打开Mind Studio工具的Terminal，此时默认在代码主目录下，执行如下命令在后台指执行deploy脚本，进行环境部署。如[图 执行deploy脚本](#zh-cn_topic_0182554577_fig19292258105419)所示。
-    
-    **图 3**  执行deploy脚本<a name="zh-cn_topic_0182554577_fig19292258105419"></a>  
-    
-    ![](figures/deploy_facedetection.png)
-    
+
+3.  执行deploy脚本， 进行配置参数调整及第三方库下载编译 打开Mind Studio工具的Terminal，此时默认在代码主目录下，执行如下命令在后台指执行deploy脚本，进行环境部署。如[图 执行deploy脚本](#zh-cn_topic_0203223294_fig107831626101910)所示。
+
+    **图 3**  执行deploy脚本<a name="zh-cn_topic_0203223294_fig107831626101910"></a>  
+    ![](figures/执行deploy脚本.png "执行deploy脚本")
+
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   首次deploy时，没有部署第三方库时会自动下载并编译，耗时可能比较久，请耐心等待。后续再重新编译时，不会重复下载编译，部署如上图所示。
-    >-   deploy时，需要选择与开发板通信的主机侧ip，一般为虚拟网卡配置的ip。如果此ip和开发板ip属于同网段，则会自动选择并部署。如果非同网段，则需要手动输入与开发板通信的主机侧ip才能完成deploy。
-    
+    >-   首次deploy时，没有部署第三方库时会自动下载并编译，耗时可能比较久，请耐心等待。后续再重新编译时，不会重复下载编译，部署如上图所示。  
+    >-   deploy时，需要选择与开发板通信的主机侧ip，一般为虚拟网卡配置的ip。如果此ip和开发板ip属于同网段，则会自动选择并部署。如果非同网段，则需要手动输入与开发板通信的主机侧ip才能完成deploy。  
+
 4.  开始编译，打开Mindstudio工具，在工具栏中点击**Build \> Build \> Build-Configuration**。如[图 编译操作及生成文件](#zh-cn_topic_0203223294_fig1625447397)所示，会在目录下生成build和run文件夹。
 
     **图 4**  编译操作及生成文件<a name="zh-cn_topic_0203223294_fig1625447397"></a>  
@@ -89,13 +93,12 @@ CN|[EN](Readme.md)
 
     ![](figures/face_detection_build.png)
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >![](public_sys-resources/icon-notice.gif) **须知：**   
     >首次编译工程时，**Build \> Build**为灰色不可点击状态。需要点击**Build \> Edit Build Configuration**，配置编译参数后再进行编译。  
-    >![](figures/build_configuration.png)  
-    
-5.  <a name="zh-cn_topic_0203223294_li499911453439"></a>启动Presenter Server。
 
-    打开Mind Studio工具的Terminal，此时默认在[步骤1](#zh-cn_topic_0203223294_li953280133816)中的代码存放路径下，执行如下命令在后台启动Face Detection应用的Presenter Server主程序。如[图 启动PresenterServer](#zh-cn_topic_0203223294_fig423515251067)所示。
+5.  启动Presenter Server。<a name="zh-cn_topic_0203223294_fig423515252222"></a> 
+
+    打开Mind Studio工具的Terminal，在应用代码存放路径下，执行如下命令在后台启动Face Detection应用的Presenter Server主程序。如[图 启动PresenterServer](#zh-cn_topic_0203223294_fig423515251067)所示。
 
     **bash run\_present\_server.sh**
 
@@ -137,7 +140,7 @@ CN|[EN](Readme.md)
     -   通过浏览器访问Presenter Server的IP地址本示例为：10.10.0.1，由于Presenter Server与Mind Studio部署在同一服务器，此IP地址也为通过浏览器访问Mind Studio的IP。
 
 
-## 运行<a name="zh-cn_topic_0203223294_section551710297235"></a>
+## 运行<a name="section551710297235"></a>
 
 1.  运行Face Detection程序。
 
@@ -148,9 +151,9 @@ CN|[EN](Readme.md)
 
     ![](figures/face_detection_run.png)
 
-2.  使用启动Presenter Server服务时提示的URL登录 Presenter Server 网站，详细可参考[启动Presenter Server](#zh-cn_topic_0203223294_li499911453439)。
+2.  使用启动Presenter Server服务时提示的URL登录 Presenter Server 网站，详细可参考[启动Presenter Server](#zh-cn_topic_0203223294_fig423515252222)。
 
-    等待Presenter Agent传输数据给服务端，单击“Refresh“刷新，当有数据时相应的Channel 的Status变成绿色，如[图11](#zh-cn_topic_0203223294_fig113691556202312)所示。
+    等待Presenter Agent传输数据给服务端，单击“Refresh“刷新，当有数据时相应的Channel 的Status变成绿色，如下图所示。
 
     **图 11**  Presenter Server界面<a name="zh-cn_topic_0203223294_fig113691556202312"></a>  
     ![](figures/Presenter-Server界面.png "Presenter-Server界面")
@@ -159,9 +162,15 @@ CN|[EN](Readme.md)
     >-   Face Detection的Presenter Server最多支持10路Channel同时显示，每个  _presenter\_view\_app\_name_  对应一路Channel。  
     >-   由于硬件的限制，每一路支持的最大帧率是20fps，受限于网络带宽的影响，帧率会自动适配为较低的帧率进行展示。  
 
-3.  单击右侧对应的View Name链接，比如上图的“video”，查看结果，对于检测到的人脸，会给出置信度的标注。
+3.  执行deploy脚本， 进行配置参数调整及第三方库下载编译 打开Mind Studio工具的Terminal，此时默认在代码主目录下，执行如下命令在后台指执行deploy脚本，进行环境部署。如图 执行deploy脚本所示。
 
-## 后续处理<a name="zh-cn_topic_0203223294_section177619345260"></a>
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >-   首次deploy时，没有部署第三方库时会自动下载并编译，耗时可能比较久，请耐心等待。后续再重新编译时，不会重复下载编译，部署如上图所示。  
+    >-   deploy时，需要选择与开发板通信的主机侧ip，一般为虚拟网卡配置的ip。如果此ip和开发板ip属于同网段，则会自动选择并部署。如果非同网段，则需要手动输入与开发板通信的主机侧ip才能完成deploy。  
+
+4.  单击右侧对应的View Name链接，比如上图的“video”，查看结果，对于检测到的人脸，会给出置信度的标注。
+
+## 后续处理<a name="section177619345260"></a>
 
 -   **停止Face Detection应用**
 
