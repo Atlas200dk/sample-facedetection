@@ -64,7 +64,7 @@
             $("input[name='selectFlag']:checkbox").each(function() {
                 $(this).attr("checked", true);
             })
-        } else {   //�之 �消全选
+        } else {   //反之 取消全选
             $("input[name='selectFlag']:checkbox").each(function() {
                 $(this).attr("checked", false);
             })
@@ -149,7 +149,7 @@
          if($("input[name='selectFlag']").is(":checked")){
              var msg = "";
              $("input[name='selectFlag']:checked").each(function() {
-                 // �历选中的checkbox
+                 // 遍历选中的checkbox
                  tr = $(this).parents("tr");
                  td = $(tr).find("td");
                  msg += encodeURIComponent($(td).eq(3).text());
