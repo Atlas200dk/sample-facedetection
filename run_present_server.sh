@@ -27,7 +27,7 @@ function main()
 
     parse_presenter_view_ip
 
-    #1.检查完毕ip之后，将ip的数值复制到config.config 
+    #1.检查完毕ip之�，将ip的数值�制到config.config 
     echo "Use ${presenter_atlasdk_ip} to connect to Atlas DK Developerment Board..."
     sed -i "s/presenter_server_ip=[0-9.]*/presenter_server_ip=${presenter_atlasdk_ip}/g" ${app_path}/presenterserver/face_detection/config/config.conf
     
